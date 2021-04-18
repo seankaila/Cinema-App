@@ -1,0 +1,40 @@
+<img src="../assets\signup.jpg">
+<H1>Sign-up</H1>
+<div>
+    <form [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata.value)">
+        <Label>Title: </Label>
+        <input type="text" name="title" formControlName="title">
+        <br />
+        <Label>First Name: </Label>
+        <input type="text" name="firstName" formControlName="firstName">
+        <br />
+        <Label>Last Name: </Label>
+        <input type="text" name="lastName" formControlName="lastName">
+        <br />
+        <Label>Date Of Birth: </Label>
+        <input type="date" name="dateOfBirth" formControlName="dateOfBirth">
+        <br />
+        <Label>Eamil: </Label>
+        <input type="text" name="email" formControlName="email">
+        <br />
+        <Label>Address: </Label>
+        <input type="text" name="address" formControlName="address">
+        <br />
+        <Label>Phone Number: </Label>
+        <input type="text" name="phoneNumber" formControlName="phoneNumber">
+        <br />
+        <input type="radio" name="gender" value="male" formControlName="gender">
+        <label for="male">Male</label><br>
+        <input type="radio" name="gender" value="female" formControlName="gender">
+        <label for="female">Female</label><br>
+        <br />
+        <br />
+        <input type="submit" value="Sign Me Up!">
+    </form>
+</div>
+<!--
+<p> title result is: {{title}}</p>
+<p> email result is: {{email}}</p>
+<p> address result is: {{address}} </p>
+<p> age result is: {{dateOfBirth}}</p>
+-->
